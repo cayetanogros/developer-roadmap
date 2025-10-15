@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bienvenido · roadmap.sh</title>
+  <meta name="description" content="Roadmaps, guías y videos para desarrolladores. Community‑driven." />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root {
+      --bg: #0b0e1a;
+      --text: #e8e8f0;
+      --text-dim: #b7b7c9;
+      --accent-green: #22c55e;
+      --accent-blue: #3b82f6;
+      --border: rgba(255,255,255,.06);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background-color: var(--bg);
+      background-image: linear-gradient(rgba(10,12,24,.6), rgba(10,12,24,.82)), url('/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+    .header { padding: 20px 0; }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: inline-flex; align-items: center; color: #fff; text-decoration: none; font-weight: 600; font-size: 18px; }
+    .brand img { width: 30px; height: 30px; margin-right: 10px; }
+
+    .hero { padding: 60px 0 90px; }
+    h1 { margin: 0 0 12px; font-size: clamp(28px, 6vw, 40px); letter-spacing: -.02em; }
+    p.lead { margin: 0 0 24px; color: var(--text-dim); font-size: clamp(14px, 2.5vw, 17px); max-width: 720px; }
+
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { appearance: none; border: none; padding: 10px 14px; border-radius: 6px; font-weight: 700; text-decoration: none; display: inline-block; cursor: pointer; }
+    .btn-primary { background: var(--accent-green); color: #fff; }
+    .btn-primary:hover { background: #19a34b; }
+    .btn-secondary { background: var(--accent-blue); color: #fff; }
+    .btn-secondary:hover { background: #316cd1; }
+
+    .footer { margin-top: auto; padding: 20px 0; color: #c8c8d6; font-size: 13px; text-align: center; background: rgba(255,255,255,.02); backdrop-filter: blur(2px); border-top: 1px solid var(--border); }
+    .footer a { color: #9fd6ff; text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="nav" aria-label="Principal">
+        <a class="brand" href="/">
+          <img src="/logo.svg" alt="roadmap.sh" />
+          <span>roadmap.sh</span>
+        </a>
+        <div>
+          <a class="btn btn-secondary" href="/signup">Suscribirse</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="container">
+      <h1>Bienvenido a roadmap.sh 🎉</h1>
+      <p class="lead">Contenido creado por la comunidad: roadmaps, guías y videos para ayudarte a aprender y crecer como desarrollador/a.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/">Explorar Roadmaps</a>
+        <a class="btn btn-secondary" href="/about">Conócenos</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>Hecho con ❤️ por la comunidad. </span>
+      <a href="/privacy">Privacidad</a>
+      <span> · </span>
+      <a href="/terms">Términos</a>
+    </div>
+  </footer>
+</body>
+</html>
